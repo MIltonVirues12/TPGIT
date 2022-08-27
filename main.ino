@@ -75,24 +75,6 @@ public:
 };
 
 
-class Led {
-  private:
-    int pin;
-
-  public:
-    Led(int p) {
-      pin = p;
-      pinMode(pin, OUTPUT);
-    }
-    void setPrenderLed() {
-      digitalWrite(pin, HIGH);
-    }
-    void setApagarLed() {
-      digitalWrite(pin, LOW);
-    }
-
-};
-
 class Pulsador {
   private:
     int pin;
@@ -127,6 +109,7 @@ class Pulsador {
 
 };
 
+
 void setup(){
 
 }
@@ -135,3 +118,4 @@ void loop()
 {
 
 }
+
